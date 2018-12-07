@@ -1,0 +1,8 @@
+
+isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†€éˆ8Ùù‘Œø,
+[
+squid:S106#"9Replace this use of System.out or System.err by a logger.(â³àÅûÿÿÿÿ8Ù¾‹ø,
+Msquid:S1481"*Remove this unused "model" local variable.(ÛÈÅ“ÿÿÿÿÿ8ð°È‹ø,
+[squid:S1197"8Move the array designator from the variable to the type.(Åé Ñþÿÿÿÿ8Îô¤‹ø,
+V
+squid:S106"9Replace this use of System.out or System.err by a logger.(æ˜Ïè8èß‰Œø,

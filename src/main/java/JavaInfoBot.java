@@ -3,12 +3,17 @@ import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.*;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
+import java.io.UnsupportedEncodingException;
+
 public class JavaInfoBot extends TelegramLongPollingBot {
     public void onUpdateReceived(Update update) {
         SendMessage message = new SendMessage();
 
        String getAuthorAndSong  =update.getMessage().getText();
-       String filteredAuthorAndSong =  getAuthorAndSong.replaceAll("\\s+","%20");
+
+        String filterText = filterData(getAuthorAndSong);
+        System.out.println(filterText);
+        String filteredAuthorAndSong =  filterText.replaceAll("\\s+","%20");
 
     if (filteredAuthorAndSong.contains("/")){
 
@@ -21,7 +26,8 @@ public class JavaInfoBot extends TelegramLongPollingBot {
             message.setChatId(update.getMessage().getChatId());
         }catch (NullPointerException e){
             System.out.println("Song is not found sorry");
-
+            message.setText(getBotUsername()+ "\n"+ "Song is not found sorry");
+            message.setChatId(update.getMessage().getChatId());
         }
 
 
@@ -32,12 +38,27 @@ public class JavaInfoBot extends TelegramLongPollingBot {
         }
     }else{
 
-        System.out.println("Nope");
+        System.out.println("Not a song");
     }
 
 
     }
+    public String filterData(String authorAndSongString){
+        byte bytes[] = new byte[0];
+        try {
+            bytes = authorAndSongString.getBytes("UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        String value = null;
+        try {
+            value = new String(bytes, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
 
+        return value;
+    }
 
     public String getBotUsername() {
         return "JavaInfoBot";
