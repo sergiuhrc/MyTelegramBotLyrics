@@ -1,8 +1,13 @@
 
-isquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(†€éˆ8Ùù‘Œø,
+[squid:S1197"8Move the array designator from the variable to the type.(Åé Ñþÿÿÿÿ8Îô¤‹ø,
 [
-squid:S106#"9Replace this use of System.out or System.err by a logger.(â³àÅûÿÿÿÿ8Ù¾‹ø,
-Msquid:S1481"*Remove this unused "model" local variable.(ÛÈÅ“ÿÿÿÿÿ8ð°È‹ø,
-[squid:S1197"8Move the array designator from the variable to the type.(Åé Ñþÿÿÿÿ8Îô¤‹ø,
+squid:S106"9Replace this use of System.out or System.err by a logger.(Ââ€Øþÿÿÿÿ8øÁ™Èø,
+Fsquid:S11489"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8¢Ê¬Èø,
+[
+squid:S106)"9Replace this use of System.out or System.err by a logger.(Ø•ºÛþÿÿÿÿ8Ù¾‹ø,
+Vsquid:S1197/"8Move the array designator from the variable to the type.(°™óâ8¢Ê¬Èø,
+Msquid:S1481"*Remove this unused "model" local variable.(ÛÈÅ“ÿÿÿÿÿ8ð°È‹ø,
+Fsquid:S11483"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ8¢Ê¬Èø,
+isquid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(†€éˆ8Ùù‘Œø,
 V
-squid:S106"9Replace this use of System.out or System.err by a logger.(æ˜Ïè8èß‰Œø,
+squid:S106"9Replace this use of System.out or System.err by a logger.(æ˜Ïè8èß‰Œø,
